@@ -8,7 +8,7 @@ type ButtonProps = {
   variant: string
 }
 
-const button = ({type, title, icon, variant}: ButtonProps) => {
+const Button = ({type, title, icon, variant}: ButtonProps) => {
   return (
     <button
       className={`flex items-center justify-center gap-3 rounded-full border ${variant}`}
@@ -19,4 +19,4 @@ const button = ({type, title, icon, variant}: ButtonProps) => {
   )
 }
 
-export default button
+export default Button

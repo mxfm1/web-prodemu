@@ -2,6 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ROBOTO FONT */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.font-roboto{
+  font-family: 'Roboto' sans-serif;
+  font-weight: 500;
+}
+
+.font-lora{
+  font-family: 'Lora', sans-serif;
+  font-weight: 900;
+}
+
   @layer base {
     :root {
       --background: 0 0% 100%;
@@ -83,15 +98,18 @@
     }
     
     .btn_about_us{
-      @apply bg-brown text-white px-4 py-2 transition-all hover:-translate-y-1 duration-200
+      @apply bg-brown text-white px-4 py-2 transition-all hover:-translate-y-2 duration-200
     }
 
     .btn_contact_us {
       @apply border-2 border-brown rounded-xl bg-white text-brown px-4 py-2
     }
+
+    /* HERO CARDS */
+    .btn_hero_products{
+      @apply bg-brown text-white px-4 py-2 hover:shadow-xl hover:scale-105 transition-all hover:-translate-y-2
+    }
     .padding-hero-section{
       @apply px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48
     }
-
-    
   }
