@@ -16,25 +16,25 @@ function Navbar({}: Props) {
 
   return (
     <>
-      <nav className="flex items-center justify-between px-6 lg:px-20 xl:px-24 relative z-100 py-5 shadow-md bg-primary">
+      <nav className="flex items-center justify-between px-6 lg:px-20 xl:px-24 relative z-100 py-5 shadow-2xl bg-gradient-to-r from-brown to-white">
         <Link href="/">
-          <Image src="/welding-logo-new.png" alt="logo" width={74} height={29} />
+          <Image src="/bonnet-hero-new.png" alt="logo" width={74} height={29} />
         </Link>
 
-        <ul className="hidden h-full gap-12 lg:flex">
+        <ul className="hidden h-full gap-12 lg:flex mr-60">
         {NAV_LINKS.map((link) => (
-          <Link href={link.href} key={link.key} className="uppercase hover:border-b text-md regular-16 text-gray-50 flexCenter cursor-pointer pb-1.5 transition-all">
+          <Link href={link.href} key={link.key} className="hover:border-b font-roboto text-lg regular-16 text-gray-100 flexCenter cursor-pointer pb-1.5 transition-all">
             {link.label}
           </Link>
         ))}
-          </ul>
+        </ul>
           <div className='hidden lg:flex items-center justify-center'>
           <Link href="/login">
             <Button
               type='button'
               title='Inicia sesion'
               icon="/user.svg"
-              variant='btn_dark_green'/>
+              variant='btn_login'/>
           </Link>
         </div>
         <button onClick={() => setIsOpen(!isOpen)}>
@@ -43,20 +43,22 @@ function Navbar({}: Props) {
             alt='menu'
             width={32}
             height={32}
-            className='inline-block cursor-pointer lg:hidden'/>
+            className='inline-block cursor-pointer lg:hidden'
+            style={{ filter: 'invert(1)'}}
+            />
           :
           <Image src="/menu.svg"
             alt='menu'
-            width={36}
-            height={36}
-            className='inline-block cursor-pointer lg:hidden'
-            style={{ filter: 'invert(1)'}}
+            width={32}
+            height={32}
+            className='inline-block cursor-pointer lg:hidden text-brown'
             />}
         </button>
       </nav>
       {/* La logica del contenedor del navbar esta aplicada asi para aplicar el delay lateral */}
-      <div className={`${isOpen ? '' : 'transform -translate-x-full'} absolute top-0 left-0 h-full pb-20 bg-zinc-400 ease-in-out transition-transform duration-500 delay-75 w-10/12 sm:w-[400px] lg:hidden z-[10] overflow-y-auto transform right-shadow`}>
-        <MobileNavbar Header1='Ofertas de Trabajo' Header2='Empresas' Header3='Mi cuenta'/>
+      {/* TEXTSIDEBAR clase para el color del texto */}
+      <div className={`${isOpen ? '' : 'transform -translate-x-full'} absolute top-0 left-0 h-full pb-20 bg-gradient-to-t from-white to-brown ease-in-out transition-transform duration-500 delay-75 w-10/12 sm:w-[400px] lg:hidden z-[10] overflow-y-auto transform right-shadow text-sidebar`}>
+        <MobileNavbar Header1='Servicios' Header2='Productos' Header3='Mi cuenta'/>
       </div>
     </>
   )

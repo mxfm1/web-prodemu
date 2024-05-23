@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={roboto.className}>
-        <div className="">
+        <div className="bg-gradient-to-t from-white to-red-200">
           <div className="">{children}</div>
         </div>
       </body>
@@ -26,4 +26,3 @@ export default function RootLayout({
   );
 }
 
-// bg-gradient-to-b from-blue-50 to-red-300"

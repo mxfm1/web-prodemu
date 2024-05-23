@@ -1,21 +1,19 @@
 export const NAV_LINKS = [
-    { href: '/' , key: 'Home', label: 'tab'},
-    { href: '/us', key: 'About-us' , label: 'Sobre Nosotros'},
-    { href: '/' , key: 'services' , label: 'Services'},
-    { href: '/' , key: 'services2', label: 'AnotherTab'},
-    { href: '/' , key: 'services2', label: 'AnotherTab'},
-    { href: '/' , key: 'services2', label: 'AnotherTab'},
+    { href: '/' , key: 'Home', label: 'Inicio'},
+    { href: '/Productos', key: 'About-us' , label: 'Productos'},
+    { href: '/contact' , key: 'services' , label: 'Contacto'},
+    { href: '/Ubicacion' , key: 'services2', label: 'Sucursal'},
 ]
 
 export const SIDEBAR_LINKS1 = [
-    {icon : '/icons/setting_bar.svg', label : 'Servicios en linea'},
-    {icon : '/icons/truck.svg' , label : 'Especialidades y servicios' }
+    {icon : '/icons/setting_bar.svg', label : 'Sucursales'},
+    {icon : '/icons/truck.svg' , label : 'Delivery' }
 ]
 
 export const SIDEBAR_LINKS2 = [
-    {icon: '/icons/explore.svg', label : 'Explorar'},
-    {icon : '/icons/publish.svg' , label: 'Publicar un anuncio'},
-    {icon: '/icons/building.svg' , label: 'Crear una pagina empresa'}
+    {icon: '/icons/explore.svg', label : 'Pasteles'},
+    {icon : '/icons/publish.svg' , label: 'Tortas'},
+    {icon: '/icons/building.svg' , label: 'Donas'}
 ]
 
 export const SIDEBAR_LINKS3 = [

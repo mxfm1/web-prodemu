@@ -1,4 +1,8 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+    // experimenta: {
+    //     serverActions: true
+    // }
+};
 
 export default nextConfig;

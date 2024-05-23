@@ -24,7 +24,7 @@ function Hero({}: Props) {
     // text CONTAIONER
     <div className='h-full flex flex-col lg:flex-row pb-12 padding-hero-section mt-20 items-center'>
       <div className="h-1/2 lg:h-full lg:w-1/2 relative mb-12">
-        <Image src="/bonnet-hero.jpeg" alt='HeroImage' width={390} height={492} className='object-contain'/>
+        <Image src="/bonnet-hero.jpeg" alt='HeroImage' width={390} height={492} className='object-contain hero-img'/>
       </div>
       {/* TEXT CONTAINER */}
       <div className="h-1/2 lg:h-full lg:w-1/2 flex flex-col gap-8 items-center justify-center">

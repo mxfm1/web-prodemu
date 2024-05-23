@@ -96,11 +96,12 @@
       @apply bg-black text-white px-4 py-2 transition-all
       /* hover:scale-110 hover:-translate-y-1 duration-300 */
     }
-    
+    .btn_login{
+      @apply bg-brown px-4 py-2 text-white
+    }
     .btn_about_us{
       @apply bg-brown text-white px-4 py-2 transition-all hover:-translate-y-2 duration-200
     }
-
     .btn_contact_us {
       @apply border-2 border-brown rounded-xl bg-white text-brown px-4 py-2
     }
@@ -112,4 +113,54 @@
     .padding-hero-section{
       @apply px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48
     }
+
   }
+
+/* TEXTO SIDEBAR */
+.text-sidebar h1{
+  color: brown;
+}
+
+.text-user{
+  color: white;
+  font-size: 30px;
+}
+
+.hero-img {
+  mask-image: linear-gradient(black 80%, transparent);
+}
+/* CSS FORMULARIO CONTACTO */
+.input-wrapper label {
+  display: block;
+  color: brown;
+  font-size: 20px;
+  margin-bottom: 2px;
+}
+
+.input-wrapper{
+  position: relative;
+}
+
+.contact-form input{
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 80%;
+  padding: 4px 8px;
+  background-color: #f0ece2;
+}
+
+.contact-form input:focus{
+  color: brown;
+  border-color: pink;
+}
+
+
+/* ERROR MSJ */
+
+.error-msg {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  margin-top: 5px;
+}
